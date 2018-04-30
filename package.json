@@ -1,0 +1,42 @@
+{
+  "name": "iv-hunter",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peterbrowse/iv-hunter.git"
+  },
+  "author": "Peter Browse",
+  "license": "MIT",
+  "engines": {
+    "node": "8.7.0"
+  },
+  "config": {
+    "port": "8080"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "async": "^2.5.0",
+    "body-parser": "1.15.1",
+    "dotenv": "^2.0.0",
+    "errorhandler": "1.4.x",
+    "express": "4.x",
+    "morgan": "1.7.x",
+    "node-persist": "2.1.x",
+    "node-sass": "3.8.x",
+    "node-sass-middleware": "0.9.x",
+    "normalize-port": "^1.0.0",
+    "pug": "2.0.0-alpha6",
+    "simple-git": "1.x.x"
+  },
+  "domains": [
+    ""
+  ]
+}

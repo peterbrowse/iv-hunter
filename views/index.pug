@@ -1,0 +1,138 @@
+doctype html
+html
+	head
+		title= title
+		meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0")
+		
+		meta(name="twitter:card", content="summary_large_image")
+		meta(name="twitter:site", content="")
+		meta(name="twitter:creator", content="")
+		meta(name="twitter:title", content="")
+		meta(name="twitter:description", content="")
+		meta(name="twitter:image", content"")
+		
+		meta(property="og:title", content="")
+		meta(property="og:type", content="website")
+		meta(property="og:url", content="")
+		meta(property="og:image", content="")
+		meta(property="og:site_name", content="")
+		meta(property="og:description", content="")
+		meta(property="fb:app_id", content="")
+		
+		meta(name="description", content="")
+		meta(name="keywords", content="")
+				
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		
+		link(rel="apple-touch-icon" sizes="" href="imgs/")
+		link(rel="icon" type="image/png" sizes="" href="imgs/")
+		
+		include html5shiv
+		
+		script(type="text/javascript",src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js")
+		script(type="text/javascript",src="/js/js.cookie.js")
+		script(type="text/javascript",src="/js/application.js")
+		script.
+			var socket = io.connect('#{socket_route}');
+	body
+		section.container
+			section.container__inner
+		
+				section.count#count_section
+			
+					section.count__holder
+						p#count__number 0
+						
+					section.count__button
+						p#count__button_copy Click to say #metoo.
+						
+						p#count__button_after_click The bigger the number the harder it is to ignore.
+				
+					section.count__copy
+						p We can't even begin to count how many of our friends, family members, colleagues, girls-met-in-nightclub-toilets, school lollipop ladies, or mum's mates have said #metoo. It's a damn shame. Even us women had no idea the problem was this huge. But it's huge.<br />HUGE. 
+
+						p The problem is, the #metoo hashtag only gives a voice to those who feel comfortable using it. We want to give everyone a chance to say #metoo, anonymously. And we don't want it to get lost in your newsfeed.
+
+						p Facts can change behaviour.<br />So help us put this monster of a number in one place. <strong>Click the button above</strong> to be counted as a human being that has been sexually harassed or assaulted.
+						
+					section.count__social
+						section.count__social_button_holder
+							section.count__social_button
+								a(href="http://twitter.com/intent/tweet/?text=http%3A%2F%2Fmetoothreefour.com%20and%20click%20to%20say%20%23metoo%20anonymously.%20Don%E2%80%99t%20let%20%23metoo%20get%20lost%20in%20your%20feed.%20Let%E2%80%99s%20look%20at%20this%20monster%20of%20a%20number." target="_blank" class="share_button share_button__twitter")
+									img(src="imgs/twitter_icon.png")
+							
+							
+						section.count__social_button_holder
+							section.count__social_button
+								a(href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fmetoothreefour.com&src=sdkpreparse" target="_blank" class="share_button share_button__facebook")
+									img(src="imgs/facebook_icon.png")
+							
+			section.container__inner.sub
+			
+				section.count.copy_container
+					
+					section.copy_container__full
+						p Times like these can be testing, triggering and distressing.<br />Please do not suffer alone.
+					
+					section.copy_container__quarter#foreveryone
+						h3 For everyone
+						
+						ul
+							li NHS Choices<br /><a target="_blank" href="https://www.nhs.uk/Livewell/Sexualhealth/Pages/Sexualassault.aspx">Help after rape and sexual assault</a>
+
+							li Sexual Abuse Referral Centres<br /><a target="_blank" href="https://www.nhs.uk/Service-Search/Rape%20and%20sexual%20assault%20referral%20centres/LocationSearch/364">Find a SARC</a>
+
+							li NSPCC<br />Helpline: <a href="tel:080880050000">0808 800 5000</a><br />(24 hours, every day)<br /><a target="_blank" href="https://www.nspcc.org.uk/">nspcc.org.uk</a>
+
+							li Victim Support<br />Supportline: <a href="tel:08081689111">0808 168 9111</a><br /><a target="_blank" href="https://www.victimsupport.org.uk/">victimsupport.org.uk</a>
+
+							li The Survivors Trust<br />Helpline: <a href="tel:08088010818">0808 801 0818</a><br /><a target="_blank" href="http://thesurvivorstrust.org/">thesurvivorstrust.org</a>
+							
+							li Safeline Helpline:<br /><a href="tel:08088005008”>0808 800 5008</a><br /><a target="_blank" href="http://safeline.org.uk/">safeline.org.uk</a>
+						
+					section.copy_container__quarter#forwomen
+						h3 For female identifying voices
+						
+						ul
+							li Rape Crisis<br />Helpline: <a href="tel:08088029999">0808 802 9999</a><br />(12-2:30 and 7-9:30)<br /><a target="_blank" href="https://rapecrisis.org.uk">rapecrisis.org.uk</a>
+
+							li RASAC (Rape and Sexual Abuse Support Centre)<br />National Helpline: <a href="tel:08088029999">0808 802 9999</a><br />(12-2.30 & 7-9.30)<br /><a target="_blank" href="http://www.rasasc.org.uk/">rasasc.org.uk</a>
+
+							li Women Against Rape<br /><a target="_blank" href="http://www.womenagainstrape.net/">womenagainstrape.net</a>
+
+							li Women's Aid Federation<br />National Domestic Violence Helpline:<br /><a href="tel:08082000247">0808 2000 247</a><br />(24hrs)<br /><a target="_blank" href="http://www.womensaid.org.uk/">womensaid.org.uk</a>
+						
+					section.copy_container__quarter#formen
+						h3 For male identifying voices
+						
+						ul
+							li li Survivors UK<br /><a target="_blank" href="http://www.survivorsuk.org/">survivorsuk.org</a>
+
+							li Rape Crisis<br />Helpline: <a href="tel:08088029999">0808 802 9999</a><br />(12-2.30 & 7-9.30)<br /><a target="_blank" href="https://rapecrisis.org.uk/">rapecrisis.org.uk</a>
+
+							li Victim Support<br />Supportline: <a href="tel:08081689111">0808 168 9111</a>
+							
+					section.copy_container__quarter#forlgbtqia
+						h3 For LGBTQIA voices
+						
+						ul
+							li Galop<br /><a target="_blank" href="https://www.galop.org.uk/‎">galop.org.uk‎</a>
+							
+							li Lesbian and Gay Switchboard<br />Helpline: <a href="tel:03003300630 ">0300 330 0630</a>
+							
+							li Fflag support line:<br /><a href="tel:08456520311">0845 652 0311</a><br />(not free)<br /><a target="_blank" href="https://www.fflag.org.uk/contact/">fflag.org.uk</a>
+							
+							li LGBT Foundation Helpline:<br /><a href="tel:03453303030">0345 3 30 30 30</a><br /><a target="_blank" href="http://lgbt.foundation/information-advice/sexual-violence/">lgbt.foundation</a>
+							
+					section.copy_container__full#sign_off
+					
+						p <strong>This list of resources is not exhaustive, please get in touch <a target="_blank" href="https://twitter.com/metoothreefour">@metoothreefour</a> with any suggestions you have which others in need of support might find helpful.<br /><br />While we very much believe it was important the #metoo campaign originally represented female voices, we think it's equally important to have a conversation about all victims of sexual harassment and assault and we do not wish to silence anyone.</strong>
+					
+	
+	footer
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108479306-1"></script>
+		<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-108479306-1');</script>
+
+		
